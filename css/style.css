@@ -1,0 +1,246 @@
+/* ------------------------------------------ 
+	by: Brian and Yusuph
+	email:	brian@gmail.com
+			kajabukama@gmail.com
+--------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Baloo');
+@import url('reset.css');
+
+/* ------------------------------------------ 
+	Base Color and Backgroud color
+--------------------------------------------*/
+
+.bg-indigo{
+	background-color: #5d00c7;
+	color: #fff;
+}
+.text-indigo{
+	color: #5d00c7;
+}
+.bg-pink{
+	background-color: #c7007e;
+	color: #fff;
+}
+.text-pink{
+	color: #c7007e;
+}
+.bg-yellow{
+	background-color: #f7ff00;
+	color: #000 !important;
+}
+.text-yellow{
+	color: #f7ff00;
+}
+.bg-blue{
+	background-color: #0c6ecf;
+	color: #fff;
+}
+.text-blue{
+	color: #0c6ecf;
+}
+.text-black{
+	color:#000;
+}
+html{
+	background:url("../imgs/bg.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
+}
+
+/* ------------------------------------------ 
+	Common Styles
+--------------------------------------------*/
+
+body{
+	font-family: 'Source Sans Pro';
+	font-weight: normal;
+	font-size: 15px;
+	padding: 0px;
+	margin:0px;
+	background-color: rgba(93, 0, 199, 0.5);
+	color:#333;
+}
+
+.container{
+	width:auto;
+	margin:0 auto;
+	height: 100%;
+	padding-left: 25em;
+	padding-right: 25em;
+}
+.header{
+	height:auto;
+	margin-bottom: 4em;
+}
+.title{
+}
+.title h1{
+	font-family: 'Baloo';
+	font-size: 8em;
+	text-align: center;
+}
+.title h3{
+	font-size: 1.8em;
+	font-weight: 300;
+	color:#fff;
+	padding-left: 6em;
+}
+.title h1 span{
+	border-bottom:2px solid #1e6fbf;
+	padding-bottom: -3em;
+}
+.title .red-text{
+	color:#ff0000;
+	margin-left:0em;
+}
+.title .blue-text{
+	color:#1e6fbf;
+}
+
+/* ------------------------------------------ 
+	home page navigation section
+--------------------------------------------*/
+
+.nav{
+	width:100%;
+	margin: auto;
+	display: flex;
+}
+.nav ul {
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+.nav ul li{
+	width: 47%;
+	height: auto;
+	display: inline-block;
+	margin: 10px;
+	border-radius: 6px;
+}
+
+.nav ul li a{
+	display: block;
+	padding: 6em 0em 7em 0em;
+	text-decoration:none; 
+	text-align: center;
+	color: #fff;
+	border:1px solid transparent;
+	transition: all .35s ease-in-out;
+}
+.nav ul li a:hover{
+	background-color: #fff;	
+	color: #5d00c7;
+	border:1px solid  transparent;
+	border-radius: 6px;
+	transition: all .35s ease-in-out;
+}
+
+.nav ul li h1 {
+	font-size: 3em;
+	text-transform: uppercase;
+	margin-bottom: 0.5em;
+	font-family: 'Source Sans Pro';
+	font-weight: 900;
+}
+.nav ul li p{
+	font-size: 1.3em;
+}
+
+
+/* ------------------------------------------ 
+	footer section
+--------------------------------------------*/
+
+.footer{
+	margin-top: 5em;
+	padding-top: 3em;
+	padding-bottom: 5em;
+	border-top: 1px solid rgba(0, 0, 0 ,0.2);
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.footer .copyright{
+	color:#fff;
+	font-size:1.2em; 
+	margin-bottom: 2em;
+}
+.footer p:last-child{
+	margin-top: 0.5em;
+	font-weight: 700;
+}
+.footer .footer-links{
+	margin-bottom: 1em;
+}
+.footer .footer-links a{
+	margin-right:.2em;
+	font-size: 1.2em; 
+	text-decoration: none;
+	color:#c7007e;
+	font-weight: 600;
+	padding: 5px 10px;
+	border:1px solid transparent;
+	transition: all .35s ease-in-out;
+}
+.footer .footer-links a:hover{
+	color: #0c6ecf;
+	border-radius: 3px;
+	border:1px solid #0c6ecf;
+	padding: 5px 10px;
+	transition: all .35s ease-in-out;
+}
+.footer .footer-links .active{
+	color: #0c6ecf;
+	border-radius: 3px;
+	border:1px solid #0c6ecf;
+	padding: 5px 10px;
+	transition: all .35s ease-in-out;
+}
+/* ------------------------------------------ 
+	Contact Form
+--------------------------------------------*/
+input[type="text"], input[type="password"], input[type="number"]{
+	font-family: 'Source Sans Pro';
+	font-size: 1.2em;
+	padding: 0.5em 1.5em;
+	border-radius: 6px;
+	border:1px solid #fff;
+}
+input[type="submit"]{
+	font-family: 'Source Sans Pro';
+	font-weight: 700;
+	font-size: 1.5em;
+	border:none;
+	text-transform: uppercase; 
+}
+.btn-default{
+	background:#fff;
+	padding:0.5em 1.5em 0.5em 1.5em;
+	transition:all 0.5s ease-in-out;
+}
+.btn-yellow{
+	background:#FFFF00;
+	padding:0.5em 1.5em 0.5em 1.5em;
+	transition:all 0.5s ease-in-out;
+}
+.btn-default:hover{
+	background:#000;
+	color:#fff;
+	transition:all 0.5s ease-in-out;
+}
+.btn-yellow:hover{
+	background:#EFE307 ;
+	padding:0.5em 1.5em 0.5em 1.5em;
+	transition:all 0.5s ease-in-out;
+}
+.input-holder{
+	padding: 5px;
+	margin-bottom: 5px;
+}
+.input-holder label{
+	display: block;
+	margin-bottom: 10px;
+}
